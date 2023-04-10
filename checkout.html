@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AdmA7x1VayVc_dR_TelQeeSH8OlvQN68e66M-sOXkmIr6FpXnd1n7t6u7mzkP3jkdgvSHdT7A70ekT1a&currency=MXN"></script>
+
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Catalogo</a></li>
+                <li><a href="blog.html">Agenda</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contactanos</a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <div id="paypal-button-container"></div>
+
+    <script>paypal.Buttons({
+        style:{
+            color:"blue",
+            shape:"pill",
+            label: "pay"
+        },
+        createOrder: function(data, actions){
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                    value: 235
+                }
+                }]
+            });
+        },
+        onCancel:function(data){
+            alert("Pago cancelado")
+        }
+    }).render('#paypal-button-container')</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

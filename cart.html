@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="shop.html">Catalogo</a></li>
+                    <li><a href="blog.html">Agenda</a></li>
+                    <li><a href="about.html">Sobre Nosotros</a></li>
+                    <li><a href="contact.html">Contactanos</a></li>
+                    <li><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Eliminar</td>
+                        <td>Imagen</td>
+                        <td>Producto</td>
+                        <td>Precio</td>
+                        <td>Cantidad</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                        <td><img src="img/opencart/carloz.png" alt=""></td>
+                        <td>Chocolate Carlos V de 16 piezas</td>
+                        <td>$235.00</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$235.00</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Aplicar Cupon</h3>
+                <div>
+                    <input type="text" placeholder="Ingresa tu codigo de cupon">
+                    <button class="normal">Aplicar</button>
+                </div>
+            </div>
+                    
+            <div id="subtotal">
+                <h3>Total del carrito</h3>
+                 <table>
+                    <tr>
+                        <td>Carrito Subtotal</td>
+                        <td>$235</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carrito Subtotal</strong></td>
+                        <td><strong>$235</strong></td>
+                    </tr>
+                </table>
+                <button><a href="checkout.html">Ir al checkout</a></button>
+            </div>
+        </section>
+
+        
+        <footer class="section-p1">
+        </footer>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
