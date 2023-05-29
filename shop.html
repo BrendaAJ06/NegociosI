@@ -11,7 +11,7 @@
 
             gtag('config', 'G-GQ7WNRLP7V');
         </script>
-        
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
 
     <body>
         <section id="header">
-            <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+            <a href="index.html"><img src="img/El Emperador2.png" class="logo" alt=""></a>
             <div>
                 <ul id="navbar">
                     <li><a href="index.html">Inicio</a></li>
@@ -32,6 +32,7 @@
                     <li><a href="about.html">Sobre Nosotros</a></li>
                     <li><a href="contact.html">Contactanos</a></li>
                     <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div id="mobile">
@@ -45,6 +46,12 @@
             <h2> Catalogo de productos</h2>
 
         </section>
+
+
+        <div class="box">
+            <input type="text" name="buscador" id="buscador" placeholder="Buscar" class="src" autocomplete="off">
+        </div>
+
 
         <section id="product1" class="section-p1">
             <div class="pro-container">
@@ -67,8 +74,26 @@
             </div>
 
         </section>
-        <script src="script.js">
-            
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    var searchBar = document.getElementById('buscador');
+    var products = document.getElementsByClassName('pro');
+
+    searchBar.addEventListener('input', function() {
+      var searchValue = searchBar.value.toLowerCase();
+
+      for (var i = 0; i < products.length; i++) {
+        var product = products[i];
+        var productName = product.getElementsByClassName('des')[0].getElementsByTagName('h5')[0].textContent.toLowerCase();
+
+        if (productName.includes(searchValue)) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      }
+    });
+  });
         </script>
     </body>
 
