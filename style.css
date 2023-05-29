@@ -5,6 +5,10 @@
   width: 100vw;
 }
 
+.fondito {
+  background-color: rgba(201, 147, 156, 0.856);
+}
+
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
   .elemento {
@@ -545,103 +549,4 @@ body {
   grid-gap: 20px;
 }
 
-/*Barra Navegacion*/
-.navbar {
-  background-color: #e9d499;
-  padding: 10px;
-}
 
-.box {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.src {
-  border: none;
-  outline: none;
-  font-size: 16px;
-  padding: 5px;
-  width: 100vw;
-}
-
-.src::placeholder {
-  color: #aaa;
-}
-
-.src:focus {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/*Inicio de sesion*/
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 500px;
-}
-
-.head-form {
-  text-align: center;
-}
-
-.form-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.log-in {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.log-in:hover {
-  background-color: #45a049;
-}
-
-.other {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
-  padding: 10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.frgt-pass {
-  color: blue;
-}
-
-.sign-up {
-  color: green;
-}
-
-.fa {
-  margin-right: 5px;
-}
