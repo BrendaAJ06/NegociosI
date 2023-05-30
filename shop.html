@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ7WNRLP7V"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ7WNRLP7V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-            gtag('config', 'G-GQ7WNRLP7V');
-        </script>
+    gtag('config', 'G-GQ7WNRLP7V');
+  </script>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Productos</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css">
 
-        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- I will use a google font that i like -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,36 +28,39 @@
   <link rel="stylesheet" href="stylesproductsjson.css"> <!-- Link to my stylesheet -->
   <link rel="stylesheet" href="stylesesion.css"> <!-- Link to my stylesheet -->
 
-    </head>
+</head>
 
-    <body>
-        <section id="header">
-            <a href="index.html"><img src="img/El Emperador2.png" class="logo" alt=""></a>
-            <div>
-                <ul id="navbar">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a class="active" href="shop.html">Catalogo</a></li>
-                    <li><a href="blog.html">Agenda</a></li>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="contact.html">Contactanos</a></li>
-                    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                    <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
+<body>
+  <section id="header">
+    <a href="index.html"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="shop.html">Catalogo</a></li>
+        <li><a href="blog.html">Agenda</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contact.html">Contactanos</a></li>
+        <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+        <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
 
-        </section>
+  </section>
 
-        <section id="page-header">
-            <h2> Catalogo de productos</h2>
-        </section>
+  <section id="page-header">
+    <h2> Catalogo de productos</h2>
+  </section>
 
 
-        <div class="box">
-            <input type="text" name="buscador" id="buscador" placeholder="Buscar" class="src" autocomplete="off">
-        </div>
+  <div class="box">
+    <input type="text" name="buscador" id="buscador" placeholder="Buscar" class="src" autocomplete="off">
+  </div>
 
-	
-	<div class="products"></div>
+  <div class="productaciones"></div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -80,6 +83,7 @@
       });
     });
   </script>
-	<script src="productshop.js"></script> <!-- link to the javascript file -->
+  <script src="scriptproducts.js"></script> <!-- link to the javascript file -->
 </body>
+
 </html>

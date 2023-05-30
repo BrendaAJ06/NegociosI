@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "producto": "Carlos V",
+        "marca": "Nestle",
+        "categoria": "Chocolate",
+        "precio": "235",
+        "descripcion": "Carlos V contiene el ic\u00f3nico sabor de tu chocolate de siempre."
+    },
+    {
+        "id": "2",
+        "producto": "Lombriz Lucky Gummys",
+        "marca": "Lucky Gummys",
+        "categoria": "Gomitas",
+        "precio": "165",
+        "descripcion": "Delicioso sabor a frutales -Especial para compartir una tarde social \u00a1Consiente tu paladar! "
+    },
+    {
+        "id": "3",
+        "producto": "Paletas Bomba Sandia",
+        "marca": "Dulces Vero",
+        "categoria": "Paletas",
+        "precio": "90",
+        "descripcion": "SIDUGSIDNAPUFPSIDAPUFH"
+    },
+    {
+        "id": "4",
+        "producto": "Halls",
+        "marca": "Halls",
+        "categoria": "Dulce Masizo",
+        "precio": "20",
+        "descripcion": "pastillones azules que no son viagra"
+    },
+    {
+        "id": "5",
+        "producto": "rockaleta",
+        "marca": "sonrix",
+        "categoria": "Paletas",
+        "precio": "100",
+        "descripcion": "paletas que no debes morder porque se te caen los dientes"
+    }
+]
