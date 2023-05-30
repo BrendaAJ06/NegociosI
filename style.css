@@ -407,6 +407,80 @@ body {
 }
 /*FIN PRODUCTOS FEATURED*/
 
+
+/*Carrusel*/
+
+.carrusel-container {
+  background-color: rgba(236, 156, 169, 0.856); /* Color de fondo del carrusel */
+  padding: 20px; /* Espacio alrededor del carrusel */
+  max-width: 100%; /* Ancho máximo del carrusel */
+  height: 50vh; /* Altura del carrusel igual al 100% del viewport height */
+  margin: 0 auto; /* Centrar el carrusel horizontalmente */
+}
+
+.carrusel img {
+  width: auto; /* Ancho automático */
+  height: auto; /* Altura automática */
+  max-width: 20%; /* Ancho máximo del contenedor */
+  max-height: 20%; /* Altura máxima del contenedor */
+  object-fit: contain; /* Ajustar imagen al contenedor */
+  display: block; /* Cambiar el elemento de imagen a un bloque */
+  margin: 0 auto; /* Auto-margen horizontal para centrar */
+}
+
+
+.carrusel {
+  width: 100%; /* Ancho del carrusel */
+  /* Otros estilos del carrusel */
+}
+
+/* Estilo de contenedor principal */
+.carrusel {
+  
+  background-color: rgba(236, 156, 169, 0.856); /* Color de fondo del carrusel */
+  padding: 20px;
+  max-width: 100%; /* Ancho máximo del contenedor */
+}
+
+/* Estilo de las imágenes del carrusel */
+.carrusel img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo de los puntos de navegación */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  color: rgba(236, 156, 169, 0.856);
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000000;
+}
+
+.carrusel a {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(236, 156, 169, 0.856);
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  max-width: 30%; /* Ancho máximo del contenedor */
+}
+
+.carrusel a:hover {
+  background-color: rgba(201, 147, 156, 0.856);
+}
+
+
+/*Fin Carrusel*/
+
 /*◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇*/
 
 /*INICIO FOOTER*/
