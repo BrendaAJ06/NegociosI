@@ -13,6 +13,6 @@
     //encode back to json
     $data = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents('productos.json', $data);
-    header('location: index.php');
+    header('location: index-crud.html');
 ?>
     
