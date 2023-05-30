@@ -35,14 +35,14 @@
         $data = json_encode($data_array, JSON_PRETTY_PRINT);
         file_put_contents('productos.json', $data);
  
-        header('location: index.php');
+        header('location: index-crud.htmil');
     }
 ?>
 <div class="container">
     <h1 class="page-header text-center">PHP JSON File CRUD (Create Read Update and Delete)</h1>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-8"><a href="index.php">Back</a>
+        <div class="col-8"><a href="index-crud.html">Back</a>
         <form method="POST">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">ID</label>
