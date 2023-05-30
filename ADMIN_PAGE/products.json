@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "producto": "Carlos V",
+        "marca": "Nestle",
+        "categoria": "Chocolate",
+        "precio": "235",
+        "descripcion": "Carlos V contiene el ic\u00f3nico sabor de tu chocolate de siempre."
+    },
+    {
+        "id": "2",
+        "image": "",
+        "producto": "Lombriz Lucky Gummys",
+        "marca": "Lucky Gummys",
+        "categoria": "Gomitas",
+        "precio": "165",
+        "descripcion": "Delicioso sabor a frutales -Especial para compartir una tarde social \u00a1Consiente tu paladar! "
+    },
+    {
+        "id": "3",
+        "producto": "regalis",
+        "marca": "Nestle",
+        "categoria": "Chocolates",
+        "precio": "80",
+        "descripcion": "ewtwywepowiyeruwoeiry"
+    }
+]
