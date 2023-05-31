@@ -38,5 +38,13 @@
         "categoria": "Paletas",
         "precio": "100",
         "descripcion": "paletas que no debes morder porque se te caen los dientes, solo chupala"
+    },
+    {
+        "id": "6",
+        "producto": "Wonka Everlast Gobstopper Candy, Paquete de 24",
+        "marca": "Wonka",
+        "categoria": "Dulces",
+        "precio": "1870",
+        "descripcion": "Un camale\u00f3n dulce y \u00fanico, Gobstopper es el caramelo rompemand\u00edbula que cambia de color y sabor capa por capa."
     }
 ]
