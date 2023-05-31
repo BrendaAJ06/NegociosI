@@ -1,0 +1,21 @@
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.details {
+    flex: 1 1 auto;
+}
+
+/* Agrega estilos adicionales según tus preferencias */

@@ -18,8 +18,8 @@
     <title>Contactanos</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stiloprod.css">
 </head>
-    <body>
 <body>
     <section id="header">
         <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
@@ -36,20 +36,45 @@
                 <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-        
     </section>
 
-
+    <section id="product-details">
+        <div class="product">
+            <div class="image">
+                <img src="ruta_de_la_imagen.jpg" alt="Imagen del producto">
+            </div>
+            <div class="details">
+                <h2>Nombre del producto</h2>
+                <p>Descripción del producto</p>
+                <p>Precio: $10.00</p>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button onclick="addToCart()">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+    
+           
     <footer class="section-p1">
         <div class="col">
+          <img class="logo" src="img/El Emperador2.png" alt="">
           <h4>Contact</h4>
           <p><strong>Direccion:</strong>Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
           <p><strong>Telefono:</strong>449 960 9129</p>
           <p><strong>Horario de Atencion:</strong>9:00 - 20:00,Lunes - Domingos</p>
         </div>
-      </footer>
+    </footer>
+      
     <script src="script.js"></script>
+    <script>
+        function addToCart() {
+            var quantity = document.getElementById("quantity").value;
+            // Aquí puedes agregar la lógica para agregar el producto al carrito con la cantidad seleccionada
+            // Puedes usar JavaScript o enviar una solicitud al servidor para procesar la acción
+            console.log("Producto agregado al carrito. Cantidad: " + quantity);
+        }
+    </script>
 
-    </body>
+</body>
 
 </html>
