@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="stiloprod.css">
@@ -41,18 +41,20 @@
     <section id="product-details">
         <div class="product">
             <div class="image">
-                <img src="ruta_de_la_imagen.jpg" alt="Imagen del producto">
+                <img src="img\opencart\dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png" alt="Imagen del producto">
             </div>
             <div class="details">
-                <h2>Nombre del producto</h2>
-                <p>Descripción del producto</p>
-                <p>Precio: $10.00</p>
+                <h2>ACIDULADITOS</h2>
+                <p>Dulce masticable agridulce con chile. Los dulces suaves de la rosa complementan un sabor increíble con una textura ligera, agradable al paladar.</p>
+                <p>Precio: $87.00</p>
                 <label for="quantity">Cantidad:</label>
                 <input type="number" id="quantity" name="quantity" min="1" value="1">
-                <button onclick="addToCart()">Agregar al carrito</button>
+                <button onclick="addToCart('img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png')">Agregar al carrito</button>
+
             </div>
         </div>
     </section>
+
     
            
     <footer class="section-p1">
@@ -66,15 +68,6 @@
     </footer>
       
     <script src="script.js"></script>
-    <script>
-        function addToCart() {
-            var quantity = document.getElementById("quantity").value;
-            // Aquí puedes agregar la lógica para agregar el producto al carrito con la cantidad seleccionada
-            // Puedes usar JavaScript o enviar una solicitud al servidor para procesar la acción
-            console.log("Producto agregado al carrito. Cantidad: " + quantity);
-        }
-    </script>
-
 </body>
 
 </html>
