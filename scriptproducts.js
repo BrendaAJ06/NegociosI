@@ -15,7 +15,7 @@ http.onload = function(){
                   <span>$ ${item.precio}</span>
                   <span>pesos</span>
                </p>
-               <a href="sproduct.html"><i class="cart">Add to cart <i class="bx bx-cart-alt"></i></a>
+               <p><i class="cart">Add to cart <i class="bx bx-cart-alt"></i></p>
             </div>
          `;
       }
