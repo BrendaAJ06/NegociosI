@@ -25,11 +25,11 @@
     },
     {
         "id": "4",
-        "producto": "Halls",
-        "marca": "Halls",
+        "producto": "Caja Chocolates Snickers, Milky Way, M&Ms",
+        "marca": "Mars",
         "categoria": "Dulce Masizo",
-        "precio": "20",
-        "descripcion": "pastillones azules que no son viagra"
+        "precio": "105",
+        "descripcion": "Disfruta del gran sabor del chocolate de tus marcas favoritas. Esta presentaci\u00f3n es ideal para compartir o para consentirte. Empieza a disfrutar tu d\u00eda con cada mordida."
     },
     {
         "id": "5",
@@ -37,6 +37,6 @@
         "marca": "sonrix",
         "categoria": "Paletas",
         "precio": "100",
-        "descripcion": "paletas que no debes morder porque se te caen los dientes y estan muy duras"
+        "descripcion": "paletas que no debes morder porque se te caen los dientes, solo chupala"
     }
 ]
