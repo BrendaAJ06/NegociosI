@@ -16,6 +16,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/quartz/bootstrap.min.css"
+        integrity="sha512-GlPFmIhfvCl79w3jNnFX4LG5pP/bRPOyHDVjUXs3aWOrMC0HNHRdH5RrplrQZQDshU+9ibUHsE5Mkznt3ClPpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/3aac1a55bb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="stylewish.css" />
@@ -28,105 +35,123 @@
 
         <div>
             <ul id="navbar">
-                <li><a href="indexsesion.html">Inicio</a></li>
-                <li><a href="shopsesion.html">Catalogo</a></li>
-                <li><a href="blogsesion.html">Agenda</a></li>
-                <li><a href="aboutsesion.html">Sobre Nosotros</a></li>
-                <li><a href="contactsesion.html">Contactanos</a></li>
-                <li><a class="active" href="wishsesion.html"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-                <li><a href="cartsesion.html"><i class="far fa-shopping-bag"></i></a></li>
-                <li><a href="usuario.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Catalogo</a></li>
+                <li><a href="blog.html">Agenda</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="contact.html">Contactanos</a></li>
+                <li><a class="active" href="wish.html"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         
     </section>
-    <div id="content">
-        <div class="product">
-            <div id = "product0">
-                <img src="images/apples.jpg" height="150" width="200" />
-                <h3>Apples</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 80 / kg</p>
+    <div class="container-fluid border border-5 border-info" style="background-color:whitesmoke; color: black;">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="vistaJumCerz.html">
+                            <img style="height:100px; width: auto; position: relative;" alt="Bootstrap Image Preview"
+                                src="img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png" />
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+
+                        <h4>Aciduladitos</h4>
+                        <h5>$45 c/u</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center">
+                            <div class="col-md-6 ">
+
+                                <button type="button" class="btn btn-success">
+                                    Añadir a Carrito
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+
+                                <button type="button" class="btn btn-danger">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <input type="button" value="Add to List" id="0" class="but" />
         </div>
-        <div class="product">
-            <div id = "product1">
-                <img src="images/guava.jpg" height="150" width="200" />
-                <h3>Guava</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 60 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="1" class="but" />
-        </div>
-        <div class="product">
-            <div id = "product2">
-                <img src="images/grapes.jpg" height="150" width="200" />
-                <h3>Grapes</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 100 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="2" class="but" />
-        </div>
-        <div class="product">
-            <div id = "product3">
-                <img src="images/banana.jpg" height="150" width="200" />
-                <h3>Bananas</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 70 / doz</p>
-            </div>
-            <input type="button" value="Add to List" id="3" class="but" />
-        </div>
-        <div class="product">
-            <div id = "product4">
-                <img src="images/orange.jpg" height="150" width="200" />
-                <h3>Oranges</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 90 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="4" class="but" />
-        </div>           
-        <div class="product">
-            <div id = "product5">
-                <img src="images/water-melon.jpg" height="150" width="200" />
-                <h3>Water Melon</h3>
-                <p>Type: Fruit</p>
-                <p>Price: Rs 30 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="5" class="but" />
-        </div>                        
-        <div class="product">
-            <div id = "product6">
-                <img src="images/carrot.jpg" height="150" width="200" />
-                <h3>Carrot</h3>
-                <p>Type: Vegetable</p>
-                <p>Price: Rs 30 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="6" class="but" />
-        </div>                        
-        <div class="product">
-            <div id = "product7">
-                <img src="images/potato.jpg" height="150" width="200" />
-                <h3>Potato</h3>
-                <p>Type: Vegetable</p>
-                <p>Price: Rs 20 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="7" class="but" />
-        </div>                        
-        <div class="product">
-            <div id = "product8">
-                <img src="images/tomato.jpg" height="150" width="200" />
-                <h3>Tomato</h3>
-                <p>Type: Vegetable</p>
-                <p>Price: Rs 50 / kg</p>
-            </div>
-            <input type="button" value="Add to List" id="8" class="but" />
-        </div>                                                            
     </div>
 
-    <aside id = "wishlist">
-        <h2 class="center">My Wishlist</h2>
-    </aside>
+    <div class="container-fluid border border-5 border-info" style="background-color:whitesmoke; color: black;">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="vistaPina.html">
+                        <img style="height:100px; width: auto; position: relative;" alt="Bootstrap Image Preview"
+                            src="img/opencart/caja.png" /></a>
+                    </div>
+                    <div class="col-md-4">
+
+                        <h4>Caja Surtida</h4>
+                        <h5>$38 c/u</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center">
+                            <div class="col-md-6 ">
+
+                                <button type="button" class="btn btn-success">
+                                    Añadir a Carrito
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+
+                                <button type="button" class="btn btn-danger">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid border border-5 border-info" style="background-color:whitesmoke; color: black;">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="vistaPulparindo.html">
+                        <img style="height:100px; width: auto; position: relative;" alt="Bootstrap Image Preview"
+                            src="img/opencart/dlr-tamarindo-6pulparindomango.png" /></a>
+                    </div>
+                    <div class="col-md-4">
+
+                        <h4>Pulparindo</h4>
+                        <h5>$28 c/u</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center">
+                            <div class="col-md-6 ">
+
+                                <button type="button" class="btn btn-success">
+                                    Añadir a Carrito
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+
+                                <button type="button" class="btn btn-danger">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </main>
 
