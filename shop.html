@@ -13,9 +13,18 @@
   </script>
 
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/quartz/bootstrap.min.css"
+        integrity="sha512-GlPFmIhfvCl79w3jNnFX4LG5pP/bRPOyHDVjUXs3aWOrMC0HNHRdH5RrplrQZQDshU+9ibUHsE5Mkznt3ClPpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/3aac1a55bb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+        integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos</title>
+  <script src="app.js" async></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="stylesesion.css"> <!-- Link to my stylesheet -->
@@ -50,94 +59,58 @@
   <section id="page-header">
     <h2> Catalogo de productos</h2>
   </section>
+  
+  
 
-
-  <div class="box">
-    <input type="text" name="buscador" id="buscador" placeholder="Buscar" class="src" autocomplete="off">
-  </div>
-
-  <section class="contenedor">
-    <!-- Contenedor de elementos -->
-    <div class="contenedor-items">
-      <section class="contenedor">
-        <!-- Contenedor de elementos -->
-        <div class="contenedor-items">
-        </div> 
-    </div>
     <!-- Carrito de Compras -->
-    <div class="carrito" id="carrito">
-        <div class="header-carrito">
-            <h2>Tu Carrito</h2>
-        </div>
+    <div class="productos">
+      <div class="row center-xs justify-content-center align-items-center text-center"> 
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="row">
+                                  <div class="col-md-6 text-center">
+                                      <p>
+                                          Ordenar por:
+                                      </p>
+                                  </div>
+                                  <div class="col-md-6">
+                                     
 
-        <div class="carrito-items">
-            <!-- 
-            <div class="carrito-item">
-                <img src="img/boxengasse.png" width="80px" alt="">
-                <div class="carrito-item-detalles">
-                    <span class="carrito-item-titulo">Box Engasse</span>
-                    <div class="selector-cantidad">
-                        <i class="fa-solid fa-minus restar-cantidad"></i>
-                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
-                        <i class="fa-solid fa-plus sumar-cantidad"></i>
-                    </div>
-                    <span class="carrito-item-precio">$15.000,00</span>
-                </div>
-               <span class="btn-eliminar">
-                    <i class="fa-solid fa-trash"></i>
-               </span>
-            </div>
-            <div class="carrito-item">
-                <img src="img/skinglam.png" width="80px" alt="">
-                <div class="carrito-item-detalles">
-                    <span class="carrito-item-titulo">Skin Glam</span>
-                    <div class="selector-cantidad">
-                        <i class="fa-solid fa-minus restar-cantidad"></i>
-                        <input type="text" value="3" class="carrito-item-cantidad" disabled>
-                        <i class="fa-solid fa-plus sumar-cantidad"></i>
-                    </div>
-                    <span class="carrito-item-precio">$18.000,00</span>
-                </div>
-               <button class="btn-eliminar">
-                    <i class="fa-solid fa-trash"></i>
-               </button>
-            </div>
-             -->
-        </div>
-        <div class="carrito-total">
-            <div class="fila">
-                <strong>Tu Total</strong>
-                <span class="carrito-precio-total">
-                    $120.000,00
-                </span>
-            </div>
-            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
-        </div>
-    </div>
-</section>
+                                      <div class="form-floating ">
+                                          <select class="form-select" id="floatingSelect"
+                                              aria-label="Floating label select example">
+                                              <option selected>Mas relevante</option>
+                                              <option value="1">Mayor precio</option>
+                                              <option value="2">Menor precio</option>
+                                              <option value="3">De la A a la Z</option>
+                                              <option value="4">De la Z a la A</option>
+                                          </select>
+                                          <label for="floatingSelect">Seleccione una opcion</label>
+                                      </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var searchBar = document.getElementById('buscador');
-      var products = document.getElementsByClassName('pro');
 
-      searchBar.addEventListener('input', function () {
-        var searchValue = searchBar.value.toLowerCase();
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-        for (var i = 0; i < products.length; i++) {
-          var product = products[i];
-          var productName = product.getElementsByClassName('des')[0].getElementsByTagName('h5')[0].textContent.toLowerCase();
 
-          if (productName.includes(searchValue)) {
-            product.style.display = 'block';
-          } else {
-            product.style.display = 'none';
-          }
-        }
-      });
-    });
-  </script>
-  <script src="app.js" async></script> <!-- link to the javascript file -->
+          <div class="row" id="res">
+              
+              <button style="display: none;" class="btn" id="boton">JSON</button>
+
+          </div>
+
+      </div>
+
+  </div>
+  <script src="app.js"></script> <!-- link to the javascript file -->
 
   <footer class="section-p1">
     <div class="col">
