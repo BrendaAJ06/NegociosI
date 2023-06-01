@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ7WNRLP7V"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GQ7WNRLP7V');
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body >
+        <section id="header">
+            <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+    
+            <div>
+                <ul id="navbar">
+                    <li><a href="indexsesion.html">Inicio</a></li>
+                    <li><a href="shopsesion.html">Catalogo</a></li>
+                    <li><a href="blogsesion.html">Agenda</a></li>
+                    <li><a href="aboutsesion.html">Sobre Nosotros</a></li>
+                    <li><a href="contactsesion.html">Contactanos</a></li>
+                    <li><a class="active" href="cartsesion.html"><i class="far fa-shopping-bag"></i></a></li>
+                    <li><a href="usuario.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <section id="cart" class="section-p1">
+            <form action="actualizar_carrito.php" method="POST">
+                <table width="100%">
+                    <thead>
+                        <tr>
+                            <td>Eliminar</td>
+                            <td>Imagen</td>
+                            <td>Producto</td>
+                            <td>Precio</td>
+                            <td>Cantidad</td>
+                            <td>Subtotal</td>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Aquí se mostrarán los productos agregados dinámicamente -->
+                    </tbody>
+                </table>
+                <button type="submit">Actualizar Carrito</button>
+            </form>
+            <p id="empty-cart-message" style="display: none;">El carrito está vacío</p>
+        </section>
+        
+
+
+        
+        <footer class="section-p1">
+        </footer>
+
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
