@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQ7WNRLP7V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GQ7WNRLP7V');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stiloprod.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.2/quartz/bootstrap.min.css"
+    integrity="sha512-GlPFmIhfvCl79w3jNnFX4LG5pP/bRPOyHDVjUXs3aWOrMC0HNHRdH5RrplrQZQDshU+9ibUHsE5Mkznt3ClPpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/3aac1a55bb.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+    integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/El Emperador2.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Catalogo</a></li>
+                <li><a href="blog.html">Agenda</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a class="active" href="contact.html">Contactanos</a></li>
+                <li><a href="wish.html"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="product-details">
+        <div class="product">
+            <div class="image">
+                <!-- Contenedor de la imagen del producto -->
+                <img src="img\opencart\dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png" alt="Imagen del producto">
+            </div>
+            <div class="details">
+                <!-- Contenedor de los detalles del producto -->
+                <div class="details-inner">
+                    <h2>Wonka Everlast Gobstopper Candy, Paquete de 24</h2>
+                    <!-- Título del producto -->
+                    <p>Un caramelo dulce, Gobstopper es el caramelo rompemandibula que cambia de color y sabor capa por capa.</p>
+                    <!-- Descripción del producto -->
+                    <p>Precio: $1870.00</p>
+                    <!-- Precio del producto -->
+                    <label for="quantity">Cantidad:</label>
+                    <!-- Etiqueta para el campo de cantidad -->
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <!-- Campo de entrada numérico para la cantidad del producto -->
+                    <button onclick="addToCart('img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png')">Agregar al carrito</button>
+                    <!-- Botón "Agregar al carrito" que llama a la función addToCart() -->
+                </div>
+            </div>
+        </div>
+               
+    </section>
+
+    <section id="galery">
+        <h2> Galeria de imagenes</h2>
+      </section>
+
+    <div class="carousel-container-dulces">
+        <div class="carousel">
+            <a href=""><img src="img/opencart/71MS4xX2sML._AC_SX425_.jpg" alt="Vista 1"></a>
+            <a href=""><img src="img/opencart/D_NQ_NP_888170-MLM50877862738_072022-O.jpg" alt="Vista 2"></a>
+        </div>
+    </div>
+
+    <section>
+      <div class="container my-5 py-5 text-dark">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-6">
+            <div class="card">
+              <div class="card-body p-4">
+                <div class="d-flex flex-start w-100">
+                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="65"
+                    height="65" />
+                  <div class="w-100">
+                    <h5 style="color: black;">Ingrese un Comentario</h5>
+                    <ul class="rating mb-3" data-mdb-toggle="rating">
+                      <i class="far fa-star fa-sm text-danger" title="Bad"></i>
+                      <i class="far fa-star fa-sm text-danger" title="Poor"></i>
+                      <i class="far fa-star fa-sm text-danger" title="OK"></i>
+                      <i class="far fa-star fa-sm text-danger" title="Good"></i>
+                      <i class="far fa-star fa-sm text-danger" title="Excellent"></i>
+                    </ul>
+                    <div class="form-outline">
+                      <textarea class="form-control" id="textAreaExample" rows="4" placeholder="Comentario" style="color: black;"></textarea>
+                      <label class="form-label" for="textAreaExample"></label>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                      <button type="button" class="btn btn-danger">
+                        Enviar<i class="fas fa-long-arrow-alt-right ms-1"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section>
+      <div class="container my-5 py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12 col-lg-10">
+            <div class="card text-dark">
+              <div class="card-body p-4">
+                <h4 class="mb-0">Comentarios Recientes</h4>
+                <p class="fw-light mb-4 pb-2"></p>
+  
+                <div class="d-flex flex-start">
+                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="60"
+                    height="60" />
+                  <div>
+                    <h6 class="fw-bold mb-1">Maggie Marsh</h6>
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="mb-0">
+                        Noviembre 07, 2022
+  
+                      </p>
+  
+                      <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
+                    </div>
+                    <p class="mb-0">
+                      Son dulces demasiado ricos que te dejan la sensacion de querer mas
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+              <hr class="my-0" />
+  
+              <div class="card-body p-4">
+                <div class="d-flex flex-start">
+                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="60"
+                    height="60" />
+                  <div>
+                    <h6 class="fw-bold mb-1">Lara Stewart</h6>
+                    <div class="d-flex align-items-center mb-3">
+                      <p class="mb-0">
+                        Diciembre 02, 2022
+  
+                      </p>
+  
+                      <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
+                    </div>
+                    <p class="mb-0">
+                      Dulces mas caros y horribles. No compren. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+           
+    <footer class="section-p1">
+        <div class="col" style="color: wheat;">
+          <img class="logo" src="img/El Emperador2.png" alt="">
+          <h4>Contact</h4>
+          <p><strong>Direccion:</strong>Av. Adolfo López Mateos Ote. 1801, Bona Gens, 20256 Aguascalientes, Ags.</p>
+          <p><strong>Telefono:</strong>449 960 9129</p>
+          <p><strong>Horario de Atencion:</strong>9:00 - 20:00,Lunes - Domingos</p>
+        </div>
+    </footer>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
