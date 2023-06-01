@@ -5,15 +5,18 @@
         "marca": "Nestle",
         "categoria": "Chocolate",
         "precio": "235",
+        "imagen": "img/opencart/carloz.png",
         "descripcion": "Carlos V contiene el ic\u00f3nico sabor de tu chocolate de siempre."
+        
     },
     {
         "id": "2",
-        "producto": "Lombriz Lucky Gummys",
-        "marca": "Lucky Gummys",
-        "categoria": "Gomitas",
-        "precio": "165",
-        "descripcion": "Delicioso sabor a frutales -Especial para compartir una tarde social \u00a1Consiente tu paladar! "
+        "producto": "Aciduladito con Chile",
+        "marca": "de la Rosa",
+        "categoria": "Dulces",
+        "precio": "81",
+        "imagen": "img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png",
+        "descripcion": "Estos caramelos suavecitos son increíbles para compartir en cualquier reunión o fiesta, por su gran variedad de sabores: cereza, fresa, piña naranja, uva y limón. Pruébalos todos."
     },
     {
         "id": "3",
@@ -21,22 +24,25 @@
         "marca": "Dulces Vero",
         "categoria": "Paletas",
         "precio": "90",
-        "descripcion": "SIDUGSIDNAPUFPSIDAPUFH"
+        "imagen": "img/opencart/Vero_bomba_sandia.jpg",
+        "descripcion": "Caramelo macizo sabor sandía rellena de chile en polvo. Bolsa con 40 piezas. Peso de la bolsa 600 gramos."
     },
     {
         "id": "4",
         "producto": "Caja Chocolates Snickers, Milky Way, M&Ms",
         "marca": "Mars",
-        "categoria": "Dulce Masizo",
+        "categoria": "Chocolate",
         "precio": "105",
+        "imagen": "img/opencart/D_NQ_NP_682473-MLM53338795085_012023-O.jpg",
         "descripcion": "Disfruta del gran sabor del chocolate de tus marcas favoritas. Esta presentaci\u00f3n es ideal para compartir o para consentirte. Empieza a disfrutar tu d\u00eda con cada mordida."
     },
     {
         "id": "5",
-        "producto": "rockaleta",
-        "marca": "sonrix",
-        "categoria": "Paletas",
+        "producto": "Dulces Vero Pica Fresa",
+        "marca": "Dulces Vero",
+        "categoria": "Dulces",
         "precio": "100",
+        "imagen": "img/opencart/pica1.jpg",
         "descripcion": "paletas que no debes morder porque se te caen los dientes, solo chupala"
     },
     {
@@ -45,6 +51,43 @@
         "marca": "Wonka",
         "categoria": "Dulces",
         "precio": "1870",
+        "imagen": "img/opencart/D_NQ_NP_888170-MLM50877862738_072022-O.jpg",
         "descripcion": "Un camale\u00f3n dulce y \u00fanico, Gobstopper es el caramelo rompemand\u00edbula que cambia de color y sabor capa por capa."
+    },
+    {
+        "id": "7",
+        "producto": "Chocolates Conejos Turín Tubo con 30 piezas",
+        "marca": "Turin",
+        "categoria": "Chocolate",
+        "precio": "240",
+        "imagen": "img/opencart/61mdeZp1HpL._AC_SX425_.jpg",
+        "descripcion": "¡Hazle el día a alguien especial con el Chocolate Conejos Turin! son chocolates hechos a base de 29% leche entera en polvo, manteca de cacao y pasta de cacao. Son la mejor opción para que tengas un lindo detalle con tu familia o amigos. Disfruta de este exquisito chocolate poco a poco y deleitate con su sabor.Turin ricos de principio a fin."
+    },
+    {
+        "id": "8",
+        "producto": "Wonka Nerds Rainbow",
+        "marca": "Wonka",
+        "categoria": "Dulces",
+        "precio": "90",
+        "imagen": "img/opencart/911BaGMtYyL.jpg",
+        "descripcion": "Un camale\u00f3n dulce y \u00fanico, Gobstopper es el caramelo rompemand\u00edbula que cambia de color y sabor capa por capa."
+    },
+    {
+        "id": "9",
+        "producto": "Tiburones Lucky Gummys",
+        "marca": "Lucky Gummys",
+        "categoria": "Gomitas",
+        "precio": "130",
+        "imagen": "img/opencart/31093359-FE4E-4472-9020-D6EEF51AE412.png",
+        "descripcion": "Gomitas de grenetina sabores frutales. Hechos en Mexico. Es suficiente almacenar el producto a temperatura ambiente (máximo 35 ° C) y seco, evitando golpes o tensiones mecánicas que puedan dañar el embalaje."
+    },
+    {
+        "id": "10",
+        "producto": "Pulparindo",
+        "marca": "de la Rosa",
+        "categoria": "Dulces",
+        "precio": "105",
+        "imagen": "img/opencart/dlr-tamarindo-6pulparindomango.png",
+        "descripcion": "De La Rosa Candy Bar Pulparindo"
     }
 ]

@@ -218,7 +218,7 @@ request.onload = function() {
                 nuevoItem.innerHTML = `
                     <span class="titulo-item" id="nombreProducto${index}">${producto.producto}</span>
                     <a href="${producto.producto.toLowerCase()}.html" class="item-link">
-                        <img src="img/El Emperador.png" alt="" class="img-item">
+                        <img src="${producto.imagen}" alt="" class="img-item">
                     </a>
                     <span class="precio-item" id="precioProducto${index}">${producto.precio}</span>
                     <button class="boton-item">Agregar al Carrito</button>
