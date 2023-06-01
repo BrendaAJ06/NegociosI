@@ -26,17 +26,18 @@
 
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="shop.html">Catalogo</a></li>
-                <li><a href="blog.html">Agenda</a></li>
-                <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="contact.html">Contactanos</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                <li><a class="active" href="sesion.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li><a href="indexsesion.html">Inicio</a></li>
+                <li><a href="shopsesion.html">Catalogo</a></li>
+                <li><a href="blogsesion.html">Agenda</a></li>
+                <li><a href="aboutsesion.html">Sobre Nosotros</a></li>
+                <li><a href="contactsesion.html">Contactanos</a></li>
+                <li><a href="wishsesion.html"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+                <li><a href="cartsesion.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a class="active" href="usuario.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <a href="cartsesion.html"><i class="far fa-shopping-bag"></i></a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
@@ -80,6 +81,7 @@
           </ul>
           <button type="button" id="editar-datos">Editar</button>
           <button type="button" id="guardar-datos" style="display: none;">Guardar</button>
+          <button type="button" id="cerrar-sesion" href="index.html">Cerrar sesión</button>
         </div>
       </div>
       
@@ -149,8 +151,12 @@ guardarDatosBtn.addEventListener('click', function() {
 });
 //fin script datos
 
-</script>
+//Script cerrar sesion
+document.getElementById("cerrar-sesion").addEventListener("click", function() {
+      window.location.href = "index.html";
+    });
 
+</script>
 <style>
   .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
@@ -288,6 +294,27 @@ guardarDatosBtn.addEventListener('click', function() {
   margin-right: 1rem;
   font-size: 1.2rem;
   vertical-align: middle;
+}
+button {
+  display: inline-block;
+  color: #252537;
+
+  width: 280px;
+  height: 50px;
+
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 5px;
+  
+  outline: none;
+  border: none;
+
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  
+  margin: 7% auto;
+  letter-spacing: 0.05em;
 }
 </style>
 </html>

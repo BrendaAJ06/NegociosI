@@ -98,37 +98,51 @@ document.getElementById("eye").addEventListener("click", function () {
 
 // Inicio formulario
 var loginButton = document.querySelector('.log-in');
-  var signUpButton = document.querySelector('.sign-up');
+    var signUpButton = document.querySelector('.sign-up');
 
-  // Agregar evento de clic al botón de inicio de sesión
-  loginButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar el envío automático del formulario
+    // Objeto JSON para almacenar los usuarios registrados
+    var usuariosRegistrados = [];
 
-    var correo = document.getElementById('txt-input').value;
-    var contraseña = document.getElementById('pwd').value;
+    // Agregar evento de clic al botón de inicio de sesión
+    loginButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Evitar el envío automático del formulario
 
-    // Validar los datos de inicio de sesión (aquí puedes agregar tu lógica de validación adicional)
-    if (correo === 'julio@example.com' && contraseña === 'julio') {
-      window.location.href = 'index.html'; // Redireccionar a la página de inicio
-    } else {
-      alert('Inicio de sesión fallido. Verifica tus datos.'); // Mostrar mensaje de error
-    }
-  });
+      var correo = document.getElementById('txt-input').value;
+      var contraseña = document.getElementById('pwd').value;
 
-  // Agregar evento de clic al botón de registro
-  signUpButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar el envío automático del formulario
+      // Validar los datos de inicio de sesión
+      var usuarioEncontrado = usuariosRegistrados.find(function(usuario) {
+        return usuario.correo === correo && usuario.contraseña === contraseña;
+      });
 
-    var correo = document.getElementById('txt-input').value;
-    var contraseña = document.getElementById('pwd').value;
+      if (usuarioEncontrado) {
+        window.location.href = 'indexsesion.html'; // Redireccionar a la página de inicio
+      } else {
+        alert('Inicio de sesión fallido. Verifica tus datos.'); // Mostrar mensaje de error
+      }
+    });
 
-    // Validar los datos de registro (aquí puedes agregar tu lógica de validación adicional)
-    if (correo && contraseña) {
-      alert('Usuario creado con éxito'); // Mostrar mensaje de éxito
-    } else {
-      alert('Debes completar todos los campos.'); // Mostrar mensaje de error
-    }
-  });
+    // Agregar evento de clic al botón de registro
+    signUpButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Evitar el envío automático del formulario
+
+      var correo = document.getElementById('txt-input').value;
+      var contraseña = document.getElementById('pwd').value;
+
+      // Validar los datos de registro
+      if (correo && contraseña) {
+        var nuevoUsuario = {
+          correo: correo,
+          contraseña: contraseña
+        };
+
+        usuariosRegistrados.push(nuevoUsuario); // Agregar nuevo usuario al arreglo
+
+        alert('Usuario creado con éxito'); // Mostrar mensaje de éxito
+      } else {
+        alert('Debes completar todos los campos.'); // Mostrar mensaje de error
+      }
+    });
   //Fin formulario
       </script>
 </body>      
