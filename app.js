@@ -205,12 +205,29 @@ request.onload = function() {
         // Convertir la respuesta JSON en un objeto JavaScript
         var productos = JSON.parse(request.responseText);
 
-        // Obtener el primer producto del arreglo (asumiendo que solo hay uno)
-        var producto = productos[0];
+        // Obtener el contenedor de los elementos
+        var contenedorItems = document.querySelector('.contenedor-items');
 
-        // Actualizar los elementos HTML con los datos del producto
-        document.getElementById('nombreProducto').textContent = producto.producto;
-        document.getElementById('precioProducto').textContent = producto.precio;
+        // Recorrer los productos y asignar los datos a los elementos HTML
+            productos.forEach(function(producto, index) {
+                // Crear un nuevo elemento de item
+                var nuevoItem = document.createElement('div');
+                nuevoItem.className = 'item';
+
+                // Crear el contenido HTML del item
+                nuevoItem.innerHTML = `
+                    <span class="titulo-item" id="nombreProducto${index}">${producto.producto}</span>
+                    <a href="${producto.producto.toLowerCase()}.html" class="item-link">
+                        <img src="img/El Emperador.png" alt="" class="img-item">
+                    </a>
+                    <span class="precio-item" id="precioProducto${index}">${producto.precio}</span>
+                    <button class="boton-item">Agregar al Carrito</button>
+                `;
+
+                // Agregar el nuevo item al contenedor
+                contenedorItems.appendChild(nuevoItem);
+            });
+
     } else {
         console.error('Error al cargar el archivo JSON.');
     }
