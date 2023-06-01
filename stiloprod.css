@@ -1,49 +1,55 @@
 .product {
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Muestra los elementos internos en una fila */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    background-color: rgba(236, 156, 169, 0.856); /* Establece el color de fondo del contenedor */
+    padding: 20px; /* Agrega un espacio interno alrededor del contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados al contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra al contenedor */
 }
 
 .image {
-    flex: 0 0 auto;
-    margin-right: 20px;
+    flex: 0 0 auto; /* Establece el tamaño del contenedor de la imagen como automático */
+    margin-right: 20px; /* Agrega un margen derecho al contenedor de la imagen */
 }
 
 .image img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 300px; /* Aumenta el ancho de la imagen */
+    height: 300px; /* Aumenta la altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 8px; /* Agrega bordes redondeados a la imagen */
 }
 
 .details {
-    flex: 1 1 auto;
+    flex: 1 1 auto; /* Establece el tamaño del contenedor de los detalles para ocupar el espacio disponible */
+}
+
+.details-inner {
+    background-color: rgb(250, 207, 216); /* Establece el color de fondo del contenedor de los detalles como blanco */
+    padding: 20px; /* Agrega un espacio interno alrededor del contenedor de los detalles */
+    border-radius: 8px; /* Agrega bordes redondeados al contenedor de los detalles */
 }
 
 .details h2 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Agrega un margen inferior al título de los detalles */
 }
 
 .details p {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Agrega un margen inferior a los párrafos de los detalles */
 }
 
 .details label {
-    margin-right: 5px;
+    margin-right: 5px; /* Agrega un margen derecho a las etiquetas de los detalles */
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    background-color: #007bff; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Agrega un espacio interno dentro del botón */
+    border-radius: 4px; /* Agrega bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor del mouse al pasar sobre el botón */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Cambia el color de fondo del botón cuando el cursor del mouse está sobre él */
 }

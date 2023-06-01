@@ -41,18 +41,28 @@
     <section id="product-details">
         <div class="product">
             <div class="image">
+                <!-- Contenedor de la imagen del producto -->
                 <img src="img\opencart\dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png" alt="Imagen del producto">
             </div>
             <div class="details">
-                <h2>ACIDULADITOS</h2>
-                <p>Dulce masticable agridulce con chile. Los dulces suaves de la rosa complementan un sabor increíble con una textura ligera, agradable al paladar.</p>
-                <p>Precio: $87.00</p>
-                <label for="quantity">Cantidad:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1">
-                <button onclick="addToCart('img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png')">Agregar al carrito</button>
-
+                <!-- Contenedor de los detalles del producto -->
+                <div class="details-inner">
+                    <h2>ACIDULADITOS</h2>
+                    <!-- Título del producto -->
+                    <p>Dulce masticable agridulce con chile. Los dulces suaves de la rosa complementan un sabor increíble con una textura ligera, agradable al paladar.</p>
+                    <!-- Descripción del producto -->
+                    <p>Precio: $87.00</p>
+                    <!-- Precio del producto -->
+                    <label for="quantity">Cantidad:</label>
+                    <!-- Etiqueta para el campo de cantidad -->
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <!-- Campo de entrada numérico para la cantidad del producto -->
+                    <button onclick="addToCart('img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png')">Agregar al carrito</button>
+                    <!-- Botón "Agregar al carrito" que llama a la función addToCart() -->
+                </div>
             </div>
         </div>
+               
     </section>
 
     
