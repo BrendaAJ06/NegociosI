@@ -33,11 +33,22 @@ function mostrarProductos(productos) {
                     <h3 class="text-center text-primary text-dark">
                         ${item.nombre}
                     </h3>
-                    <a href="#">
-                        <img src="${item.imagen}" class="img-fluid">
+                    <a href="${item.link}">
+                        <img class="text-center" src="${item.foto}" alt=""
+                            style="height:150px; width: auto; position: relative; margin: auto;">
                     </a>
-                    <h5 class="text-center text-primary text-dark">$ ${item.precio}</h5>
-                    <p class="text-primary text-dark">${item.descripcion}</p>
+                    <h5 class="text-center text-dark">
+                        ${item.marca}
+                    </h5>
+                    <h5 class="text-center text-dark">
+                        ${item.descripcion}
+                    </h5>
+                    <h4 class="text-left text-dark">
+                        ${item.precio}
+                    </h4>
+                    <a href="${item.link}" type="button" class="btn btn-success">
+                        Ver Más
+                    </a>
                 </div>
             </div>
         `;
