@@ -21,11 +21,13 @@
     if(isset($_POST['save'])){
         $input = array(
             'id' => $_POST['id'],
-            'producto' => $_POST['producto'],
+            'foto' => $_POST['foto'],
+            'nombre' => $_POST['nombre'],
             'marca' => $_POST['marca'],
             'categoria' => $_POST['categoria'],
+            'descripcion' => $_POST['descripcion'],
             'precio' => $_POST['precio'],
-            'descripcion' => $_POST['descripcion']
+            'link' => $_POST['link'],
         );
  
         //update the selected index
@@ -51,9 +53,15 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Producto</label>
+                <label class="col-sm-2 col-form-label">Foto</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="producto" name="producto" value="<?php echo $row->producto; ?>">
+                    <input type="text" class="form-control" id="foto" name="foto" value="<?php echo $row->foto; ?>">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $row->nombre; ?>">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -78,6 +86,12 @@
                 <label class="col-sm-2 col-form-label">Descripcion</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $row->descripcion; ?>">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Link</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="link" name="link" value="<?php echo $row->link; ?>">
                 </div>
             </div>
             <input type="submit" name="save" value="Save" class="btn btn-primary">

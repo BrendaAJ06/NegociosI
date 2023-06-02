@@ -61,12 +61,20 @@
                     <!-- Descripción del producto -->
                     <p>Precio: $105.00</p>
                     <!-- Precio del producto -->
-                    <label for="quantity">Cantidad:</label>
-                    <!-- Etiqueta para el campo de cantidad -->
-                    <input type="number" id="quantity" name="quantity" min="1" value="1">
-                    <!-- Campo de entrada numérico para la cantidad del producto -->
-                    <button onclick="addToCart('img/opencart/dulces-de-la-rosa-caramelos-suaves-aciduladito-800x600.png')">Agregar al carrito</button>
-                    <!-- Botón "Agregar al carrito" que llama a la función addToCart() -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                      <input type="hidden" name="cmd" value="_s-xclick" />
+                      <input type="hidden" name="hosted_button_id" value="WWX3TWLEE2D8L" />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <input type="image" src="https://www.paypalobjects.com/es_MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+                    </form>
+                    <!-- Comprar el Producto -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                      <input type="hidden" name="cmd" value="_s-xclick" />
+                      <input type="hidden" name="hosted_button_id" value="E8VJPB4S9VFQN" />
+                      <input type="hidden" name="currency_code" value="USD" />
+                      <input type="image" src="https://www.paypalobjects.com/es_MX/i/btn/btn_cart_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Agregar al carrito" />
+                    </form>
+                    <!-- Agregar al carrito-->
                 </div>
             </div>
         </div>
@@ -84,98 +92,6 @@
         </div>
     </div>
 
-    <section>
-      <div class="container my-5 py-5 text-dark">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-10 col-lg-8 col-xl-6">
-            <div class="card">
-              <div class="card-body p-4">
-                <div class="d-flex flex-start w-100">
-                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="65"
-                    height="65" />
-                  <div class="w-100">
-                    <h5 style="color: black;">Ingrese un Comentario</h5>
-                    <ul class="rating mb-3" data-mdb-toggle="rating">
-                      <i class="far fa-star fa-sm text-danger" title="Bad"></i>
-                      <i class="far fa-star fa-sm text-danger" title="Poor"></i>
-                      <i class="far fa-star fa-sm text-danger" title="OK"></i>
-                      <i class="far fa-star fa-sm text-danger" title="Good"></i>
-                      <i class="far fa-star fa-sm text-danger" title="Excellent"></i>
-                    </ul>
-                    <div class="form-outline">
-                      <textarea class="form-control" id="textAreaExample" rows="4" placeholder="Comentario" style="color: black;"></textarea>
-                      <label class="form-label" for="textAreaExample"></label>
-                    </div>
-                    <div class="d-flex justify-content-between mt-3">
-                      <button type="button" class="btn btn-danger">
-                        Enviar<i class="fas fa-long-arrow-alt-right ms-1"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section>
-      <div class="container my-5 py-5">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-12 col-lg-10">
-            <div class="card text-dark">
-              <div class="card-body p-4">
-                <h4 class="mb-0">Comentarios Recientes</h4>
-                <p class="fw-light mb-4 pb-2"></p>
-  
-                <div class="d-flex flex-start">
-                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="60"
-                    height="60" />
-                  <div>
-                    <h6 class="fw-bold mb-1">Maggie Marsh</h6>
-                    <div class="d-flex align-items-center mb-3">
-                      <p class="mb-0">
-                        Noviembre 07, 2022
-  
-                      </p>
-  
-                      <a href="#!" class="link-muted"><i class="fas fa-heart ms-2"></i></a>
-                    </div>
-                    <p class="mb-0">
-                      Son dulces demasiado ricos que te dejan la sensacion de querer mas
-                    </p>
-                  </div>
-                </div>
-              </div>
-  
-              <hr class="my-0" />
-  
-              <div class="card-body p-4">
-                <div class="d-flex flex-start">
-                  <img class="rounded-circle shadow-1-strong me-3" src="https://img.freepik.com/iconos-gratis/usuario_318-159711.jpg" alt="avatar" width="60"
-                    height="60" />
-                  <div>
-                    <h6 class="fw-bold mb-1">Lara Stewart</h6>
-                    <div class="d-flex align-items-center mb-3">
-                      <p class="mb-0">
-                        Diciembre 02, 2022
-  
-                      </p>
-  
-                      <a href="#!" class="link-danger"><i class="fas fa-heart ms-2"></i></a>
-                    </div>
-                    <p class="mb-0">
-                      Dulces mas caros y horribles. No compren. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     
            
     <footer class="section-p1">

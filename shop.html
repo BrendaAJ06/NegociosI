@@ -65,48 +65,26 @@
 
     <!-- Carrito de Compras -->
     <div class="productos">
-      <div class="row center-xs justify-content-center align-items-center text-center"> 
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="row">
-                                  <div class="col-md-6 text-center">
-                                      <p>
-                                          Ordenar por:
-                                      </p>
-                                  </div>
-                                  <div class="col-md-6">
-                                     
-
-                                      <div class="form-floating ">
-                                          <select class="form-select" id="floatingSelect"
-                                              aria-label="Floating label select example">
-                                              <option selected>Mas relevante</option>
-                                              <option value="1">Mayor precio</option>
-                                              <option value="2">Menor precio</option>
-                                              <option value="3">De la A a la Z</option>
-                                              <option value="4">De la Z a la A</option>
-                                          </select>
-                                          <label for="floatingSelect">Seleccione una opcion</label>
-                                      </div>
+      <div>
+        <select id="ordenar" onchange="ordenarProductos()">
+          <option value="ninguno">Ordenar por:</option>
+          <option value="ascendente">Precio ascendente</option>
+          <option value="descendente">Precio descendente</option>
+      </select>
+  
+      <input type="text" id="filtro" placeholder="Buscar por nombre o categoría">
+  
+      <button id="boton">Buscar</button>
+      </div>
+      
 
 
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-
-          <div class="row" id="res">
-              
+            <div class="row" id="res">
+            
               <button style="display: none;" class="btn" id="boton">JSON</button>
-
           </div>
+
+          
 
       </div>
 

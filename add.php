@@ -20,9 +20,15 @@
                 </div>
             </div>
             <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Producto</label>
+                <label class="col-sm-2 col-form-label">Foto</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="producto" name="producto">
+                    <input type="text" class="form-control" id="foto" name="foto">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="nombre" name="nombre">
                 </div>
             </div>
             <div class="mb-3 row">
@@ -59,17 +65,19 @@
 <?php
     if(isset($_POST['save'])){
         //open the json file
-        $data = file_get_contents('productos.json');
+        $data = file_get_contents('productos.js');
         $data = json_decode($data);
  
         //data in out POST
         $input = array(
             'id' => $_POST['id'],
-            'producto' => $_POST['producto'],
+            'foto' => $_POST['foto'],
+            'nombre' => $_POST['nombre'],
             'marca' => $_POST['marca'],
             'categoria' => $_POST['categoria'],
+            'descripcion' => $_POST['descripcion'],
             'precio' => $_POST['precio'],
-            'descripcion' => $_POST['descripcion']
+            'link' => $_POST['link'],
         );
  
         //append the input to our array

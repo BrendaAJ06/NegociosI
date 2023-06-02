@@ -13,8 +13,7 @@
 <body>
 <nav>
     <ul>
-      <li><a href="">Inicio</a></li>
-      <li><a href="UserIndex.php">Usuarios</a></li>
+      <li><a href="paneldecontrol.html">Inicio</a></li>
       <li><a href="index.php">Productos</a></li>
     </ul>
   </nav>
@@ -27,11 +26,13 @@
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
                         <th>ID</th>
-                        <th>Producto</th>
+                        <th>Foto</th>
+                        <th>Nombre</th>
                         <th>Marca</th>
                         <th>Categoria</th>
-                        <th>Precio</th>
                         <th>Descripcion</th>
+                        <th>Precio</th>
+                        <th>Link</th>
                         <th>Action</th>
                     </thead>
                     <tbody>
@@ -46,11 +47,13 @@
                             echo "
                                 <tr>
                                     <td>" . $row->id . "</td>
-                                    <td>" . $row->producto . "</td>
+                                    <td>" . $row->foto . "</td>
+                                    <td>" . $row->nombre . "</td>
                                     <td>" . $row->marca . "</td>
                                     <td>" . $row->categoria . "</td>
-                                    <td>" . $row->precio . "</td>
                                     <td>" . $row->descripcion . "</td>
+                                    <td>" . $row->precio . "</td>
+                                    <td>" . $row->link . "</td>
                                     <td>
                                         <a href='edit.php?index=" . $index . "' class='btn btn-success btn-sm'>Edit</a>
                                         <a href='delete.php?index=" . $index . "' class='btn btn-danger btn-sm'>Delete</a>
