@@ -6,7 +6,7 @@
         "marca": "Nestle",
         "categoria": "Chocolate",
         "descripcion": "Chocolate de crema marca Nestle",
-        "precio": "$35 c\/u",
+        "precio": "35",
         "link": "vistaCarlosV.html"
     },
     {
@@ -16,7 +16,7 @@
         "marca": "Mars",
         "categoria": "Chocolate",
         "descripcion": "Disfruta del gran sabor del chocolate de tus marcas favoritas. Esta presentaci\u00f3n es ideal para compartir o para consentirte. Empieza a disfrutar tu d\u00eda con cada mordida.",
-        "precio": "$105 c\/u",
+        "precio": "105",
         "link": "vistachocolatesvarios.html"
     },
     {
@@ -26,7 +26,7 @@
         "marca": "Vero",
         "categoria": "Dulces",
         "descripcion": "Bolitas agridulces de fresa marca Vero",
-        "precio": "$27 c\/u",
+        "precio": "27",
         "link": "vistaPicafresa.html"
     },
     {
@@ -36,7 +36,7 @@
         "marca": "Lucky Gummys",
         "categoria": "Gomitas",
         "descripcion": "Gomitas de grenetina sabores frutales",
-        "precio": "$45 c\/u",
+        "precio": "45",
         "link": "vistaTiburon.html"
     },
     {
@@ -46,7 +46,7 @@
         "marca": "Wonka",
         "categoria": "Dulces",
         "descripcion": "Un camale\u00f3n dulce y \u00fanico, Gobstopper es el caramelo rompemand\u00edbula que cambia de color y sabor capa por capa.",
-        "precio": "$1870 c\/u",
+        "precio": "1870",
         "link": "vistaWonka.html"
     },
     {
@@ -56,7 +56,7 @@
         "marca": "Wonka",
         "categoria": "Dulces",
         "descripcion": "Un camale\u00f3n dulce y \u00fanico, Gobstopper es el caramelo rompemand\u00edbula que cambia de color y sabor capa por capa.",
-        "precio": "$95 c\/u",
+        "precio": "95",
         "link": "vistaWonkaNerds.html"
     },
     {
@@ -66,7 +66,7 @@
         "marca": "CP Products",
         "categoria": "Paletas",
         "descripcion": "Paletas de caramelo sabor sandia con cubierta de chile",
-        "precio": "$35 c\/u",
+        "precio": "35",
         "link": "vistaRebanaditas.html"
     },
     {
@@ -76,7 +76,7 @@
         "marca": "Dulces Vero",
         "categoria": "Paletas",
         "descripcion": "Caramelo macizo sabor sand\u00eda rellena de chile en polvo. Bolsa con 40 piezas. Peso de la bolsa 600 gramos.",
-        "precio": "$90 c\/u",
+        "precio": "90",
         "link": "vistaBombaSandia.html"
     },
     {
@@ -86,17 +86,17 @@
         "marca": "Turin",
         "categoria": "Chocolate",
         "descripcion": "\u00a1Hazle el d\u00eda a alguien especial con el Chocolate Conejos Turin! son chocolates hechos a base de 29% leche entera en polvo, manteca de cacao y pasta de cacao. Son la mejor opci\u00f3n para que tengas un lindo detalle con tu familia o amigos. Disfruta de este exquisito chocolate poco a poco y deleitate con su sabor.Turin ricos de principio a fin.",
-        "precio": "$240 c\/u",
+        "precio": "240",
         "link": "vistaConejitoTurin.html"
     },
     {
         "id:": "10",
-        "foto": "https:\/\/i.ibb.co\/K00ZX3h\/aciduladito-f.png",
+        "foto": "https:i.ibb.coK00ZX3haciduladito-f.png",
         "nombre": "Aciduladito",
         "marca": "de la Rosa",
         "categoria": "Dulce",
         "descripcion": "Peque\u00f1os caramelos acidos y picositos con sabores variados ",
-        "precio": "$26 c\/u",
+        "precio": "26",
         "link": "vistaAcidulados.html"
     },
     {
