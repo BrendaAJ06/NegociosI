@@ -1,7 +1,7 @@
 console.log('correcto');
 let datos;
 
-document.querySelector('#boton').addEventListener('click', function () {
+document.querySelector('#buscar').addEventListener('click', function () {
     const filtro = document.getElementById('filtro').value;
     buscarProductos(filtro);
 });
